@@ -1,0 +1,27 @@
+{
+  "name": "vincent-project",
+  "version": "1.0.0",
+  "description": "Vincent project with tools and policies",
+  "private": true,
+  "scripts": {
+    "vincent:hardreset": "node vincent-scripts/hardReset.js",
+    "vincent:e2e:reset": "node vincent-scripts/resetE2E.js",
+    "vincent:e2e": "dotenv -e .env -- tsx vincent-e2e/src/e2e.ts",
+    "vincent:e2e:erc20": "dotenv -e .env -- tsx vincent-e2e/src/e2e-erc20.ts",
+    "vincent:build": "node vincent-scripts/buildPackages.js",
+    "vincent:build:oracle": "cd vincent-packages/tools/mock-oracle-setter && pnpm install && pnpm run build"
+  },
+  "devDependencies": {
+    "@lit-protocol/vincent-app-sdk": "*",
+    "@lit-protocol/vincent-scaffold-sdk": "1.1.5",
+    "chalk": "4.1.2",
+    "dotenv-cli": "8.0.0",
+    "tsx": "4.0.0",
+    "viem": "2.31.4"
+  },
+  "dependencies": {
+    "@lit-protocol/vincent-tool-sdk": "^1.0.2",
+    "ethers": "^6.15.0",
+    "zod": "^4.1.12"
+  }
+}

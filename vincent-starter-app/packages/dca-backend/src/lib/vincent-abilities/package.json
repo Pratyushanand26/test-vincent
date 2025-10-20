@@ -1,0 +1,20 @@
+{
+  "name": "@your-org/vincent-tool-mock-oracle-setter",
+  "version": "1.0.0",
+  "description": "Vincent tool for setting MockOracle price",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && node ../../../vincent-scripts/buildPackages.js"
+  },
+  "dependencies": {
+    "@lit-protocol/vincent-ability-sdk": "^2.3.1",
+    "@lit-protocol/vincent-scaffold-sdk": "^1.1.5",
+    "@lit-protocol/vincent-tool-sdk": "^1.0.2",
+    "ethers": "^6.15.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
