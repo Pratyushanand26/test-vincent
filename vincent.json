@@ -1,0 +1,11 @@
+{
+  "package": {
+    "namespace": "@test",
+    "abilityPrefix": "vincent-ability-",
+    "policyPrefix": "vincent-policy-"
+  },
+  "directories": {
+    "abilities": "./vincent-packages/abilities",
+    "policies": "./vincent-packages/policies"
+  }
+}
